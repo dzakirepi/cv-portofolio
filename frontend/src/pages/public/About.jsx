@@ -1,0 +1,1 @@
+export default function About(){return <main className="content-page"><p className="eyebrow">DZAKI REPI NUGROHO</p><h1>About me</h1><p>Konten halaman ini dapat dikelola melalui dashboard admin.</p></main>}
