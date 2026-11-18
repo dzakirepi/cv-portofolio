@@ -1,0 +1,6 @@
+*.exe
+*.test
+.env
+storage-data/
+tmp/
+vendor/
