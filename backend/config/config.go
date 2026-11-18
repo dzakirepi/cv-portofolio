@@ -22,8 +22,8 @@ func Load() Config {
 	// .env bersifat opsional; environment variables server tetap didukung.
 	_ = godotenv.Load()
 	return Config{
-		Port:           env("PORT", "8080"),
-		FrontendOrigin: env("FRONTEND_ORIGIN", "http://localhost:5173"),
+		Port:           env("PORT", "2303"),
+		FrontendOrigin: env("FRONTEND_ORIGIN", "http://localhost:2303"),
 		JWTSecret:      env("JWT_SECRET", "local-development-secret-change-before-deploy-123"),
 		StorageDir:     env("STORAGE_DIR", "./storage-data"),
 		AdminUsername:  env("ADMIN_USERNAME", "admin"),

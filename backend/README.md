@@ -13,7 +13,7 @@ Backend portfolio berbasis Go + Fiber dengan penyimpanan JSON di disk. Tidak men
    go mod tidy
    go run .
    ```
-5. Buka `http://localhost:8080/portfolio`.
+5. Buka `http://localhost:2303/portfolio`.
 
 ## URL penting
 - `GET /portfolio` — informasi backend portfolio (URL utama backend).

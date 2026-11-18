@@ -65,7 +65,7 @@ func main() {
 	uploadController := controllers.NewUploadController(store, uploadDir, cfg.MaxUploadMB)
 	contactController := controllers.NewContactController(store)
 
-	// URL utama backend: http://localhost:8080/portfolio
+	// URL utama backend: http://localhost:2303/portfolio
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.Redirect("/portfolio")
 	})
