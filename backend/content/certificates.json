@@ -1,8 +1,262 @@
 [
   {
-    "title": "Sertifikasi Kompetensi Programmer",
-    "issuer": "BNSP",
-    "year": "",
+    "slug": "bnsp-analis-program",
+    "category": "certification",
+    "featured": true,
+    "title": {
+      "id": "Sertifikat Kompetensi – Analis Program",
+      "en": "Certificate of Competence – Program Analyst"
+    },
+    "issuer": "BNSP · LSP Universitas Bina Sarana Informatika",
+    "date": "2026-03-06",
+    "note": {
+      "id": "Bidang Pengembang Perangkat Lunak · berlaku 3 tahun",
+      "en": "Software Development · valid for 3 years"
+    },
+    "credentialId": "62010 2514 0006074 2026",
+    "file": "/certificates/bnsp-analis-program.jpeg",
+    "url": ""
+  },
+  {
+    "slug": "erp-odoo-jidoka",
+    "category": "certification",
+    "featured": true,
+    "title": {
+      "id": "Uji Profisiensi ERP Odoo",
+      "en": "ERP Odoo Proficiency Test"
+    },
+    "issuer": "PT Jidoka System Indonesia",
+    "date": "2026-01-08",
+    "period": {
+      "id": "6–8 Jan 2026",
+      "en": "Jan 6–8, 2026"
+    },
+    "note": {
+      "id": "Hasil: Distinguished/Excellent",
+      "en": "Result: Distinguished/Excellent"
+    },
+    "credentialId": "2026010349",
+    "file": "/certificates/erp-odoo-jidoka.pdf",
+    "url": ""
+  },
+  {
+    "slug": "toefl-prediction",
+    "category": "certification",
+    "featured": true,
+    "title": {
+      "id": "TOEFL Prediction Test",
+      "en": "TOEFL Prediction Test"
+    },
+    "issuer": "Lembaga Bahasa Universitas Bina Sarana Informatika",
+    "date": "2026-08-28",
+    "note": {
+      "id": "Skor total 507",
+      "en": "Total score 507"
+    },
+    "credentialId": "",
+    "file": "/certificates/toefl-prediction.pdf",
+    "url": ""
+  },
+  {
+    "slug": "dicoding-gen-ai-aws",
+    "category": "course",
+    "title": {
+      "id": "Belajar Dasar Cloud dan Gen AI di AWS",
+      "en": "Cloud & Generative AI Fundamentals on AWS"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2026-01-05",
+    "credentialId": "07Z6JYL12XQR",
+    "file": "/certificates/dicoding-gen-ai-aws.pdf",
+    "url": "https://www.dicoding.com/certificates/07Z6JYL12XQR"
+  },
+  {
+    "slug": "dicoding-dasar-ai",
+    "category": "course",
+    "title": {
+      "id": "Belajar Dasar AI",
+      "en": "AI Fundamentals"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2025-10-09",
+    "credentialId": "N9ZO2MGY6PG5",
+    "file": "/certificates/dicoding-dasar-ai.pdf",
+    "url": "https://www.dicoding.com/certificates/N9ZO2MGY6PG5"
+  },
+  {
+    "slug": "dicoding-react-fundamental",
+    "category": "course",
+    "title": {
+      "id": "Belajar Fundamental Aplikasi Web dengan React",
+      "en": "React Web App Fundamentals"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-09-17",
+    "file": "/certificates/dicoding-react-fundamental.pdf",
+    "url": ""
+  },
+  {
+    "slug": "dicoding-fe-expert",
+    "category": "course",
+    "title": {
+      "id": "Menjadi Front-End Web Developer Expert",
+      "en": "Front-End Web Developer Expert"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-09-03",
+    "file": "/certificates/dicoding-fe-expert.pdf",
+    "url": ""
+  },
+  {
+    "slug": "dicoding-backend-pemula",
+    "category": "course",
+    "title": {
+      "id": "Belajar Membuat Aplikasi Back-End untuk Pemula",
+      "en": "Back-End App Development for Beginners"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-08-28",
+    "file": "/certificates/dicoding-backend-pemula.pdf",
+    "url": ""
+  },
+  {
+    "slug": "dicoding-dasar-javascript",
+    "category": "course",
+    "title": {
+      "id": "Belajar Dasar Pemrograman JavaScript",
+      "en": "JavaScript Programming Fundamentals"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-08-26",
+    "file": "/certificates/dicoding-dasar-javascript.pdf",
+    "url": ""
+  },
+  {
+    "slug": "dicoding-dasar-pemrograman",
+    "category": "course",
+    "title": {
+      "id": "Memulai Dasar Pemrograman untuk Menjadi Pengembang Software",
+      "en": "Programming Fundamentals for Software Developers"
+    },
+    "issuer": "Dicoding Indonesia",
+    "date": "2023-08-14",
+    "file": "/certificates/dicoding-dasar-pemrograman.pdf",
+    "url": ""
+  },
+  {
+    "slug": "workshop-ai-agent",
+    "category": "event",
+    "title": {
+      "id": "Workshop “Build Your First AI Agent”",
+      "en": "Workshop “Build Your First AI Agent”"
+    },
+    "issuer": "PT Iner Corp Indonesia",
+    "date": "2025-12-13",
+    "file": "/certificates/workshop-ai-agent.pdf",
+    "url": ""
+  },
+  {
+    "slug": "seminar-karir-ubsi",
+    "category": "event",
+    "title": {
+      "id": "Seminar Karir: Strategi Persiapan Diri & Aksi untuk Meraih Pekerjaan",
+      "en": "Career Seminar: Preparing to Land a Job"
+    },
+    "issuer": "Fakultas Teknik & Informatika UBSI",
+    "date": "2023-12-14",
+    "file": "/certificates/seminar-karir-ubsi.pdf",
+    "url": ""
+  },
+  {
+    "slug": "qa-engineer-class",
+    "category": "event",
+    "title": {
+      "id": "QA Engineer Session Class",
+      "en": "QA Engineer Session Class"
+    },
+    "issuer": "HIMSI DPC Cikarang",
+    "date": "2023-07-16",
+    "file": "/certificates/qa-engineer-class.pdf",
+    "url": ""
+  },
+  {
+    "slug": "webinar-ai-seo",
+    "category": "event",
+    "title": {
+      "id": "Webinar Artificial Intelligence & Search Engine Optimization",
+      "en": "Webinar: Artificial Intelligence & Search Engine Optimization"
+    },
+    "issuer": "Sistem Informasi Tanri Abeng University",
+    "date": "2023-02-25",
+    "file": "/certificates/webinar-ai-seo.pdf",
+    "url": ""
+  },
+  {
+    "slug": "seminar-english-skills",
+    "category": "event",
+    "title": {
+      "id": "Seminar “Boosting Up Your English Language Skills”",
+      "en": "Seminar “Boosting Up Your English Language Skills”"
+    },
+    "issuer": "Universitas Bina Sarana Informatika",
+    "date": "2022-09-11",
+    "file": "/certificates/seminar-english-skills.pdf",
+    "url": ""
+  },
+  {
+    "slug": "semot-ubsi",
+    "category": "event",
+    "title": {
+      "id": "Seminar Motivasi (SEMOT) PKKMB",
+      "en": "Motivational Seminar (SEMOT) – Student Orientation"
+    },
+    "issuer": "Universitas Bina Sarana Informatika",
+    "date": "2022-09-11",
+    "file": "/certificates/semot-ubsi.pdf",
+    "url": ""
+  },
+  {
+    "slug": "ormik-ubsi",
+    "category": "event",
+    "title": {
+      "id": "Orientasi Akademik (ORMIK) PKKMB",
+      "en": "Academic Orientation (ORMIK) – Student Orientation"
+    },
+    "issuer": "Universitas Bina Sarana Informatika",
+    "date": "2022-09-09",
+    "period": {
+      "id": "5–9 Sep 2022",
+      "en": "Sep 5–9, 2022"
+    },
+    "file": "/certificates/ormik-ubsi.pdf",
+    "url": ""
+  },
+  {
+    "slug": "webinar-warga-muda",
+    "category": "event",
+    "title": {
+      "id": "Webinar “Siap Menang, Siap Kalah”",
+      "en": "Webinar “Ready to Win, Ready to Lose”"
+    },
+    "issuer": "Warga Muda",
+    "date": "2020-12-04",
+    "file": "/certificates/webinar-warga-muda.pdf",
+    "url": ""
+  },
+  {
+    "slug": "himsi-cikarang",
+    "category": "organization",
+    "title": {
+      "id": "Anggota Divisi Pendidikan – HIMSI DPC Cikarang",
+      "en": "Education Division Member – HIMSI Cikarang Chapter"
+    },
+    "issuer": "Himpunan Mahasiswa Sistem Informasi UBSI",
+    "date": "2023-01-01",
+    "period": {
+      "id": "Periode 2023–2024",
+      "en": "2023–2024 term"
+    },
+    "file": "/certificates/himsi-cikarang.pdf",
     "url": ""
   }
 ]

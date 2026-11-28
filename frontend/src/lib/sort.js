@@ -1,0 +1,1 @@
+export const byDateDesc = (a, b) => String(b.date || '').localeCompare(String(a.date || ''))

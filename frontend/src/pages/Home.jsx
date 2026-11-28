@@ -3,6 +3,7 @@ import Projects from '../sections/Projects'
 import About from '../sections/About'
 import Skills from '../sections/Skills'
 import Resume from '../sections/Resume'
+import Certificates from '../sections/Certificates'
 import Blog from '../sections/Blog'
 import Contact from '../sections/Contact'
 
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <Skills />
       <Resume />
+      <Certificates />
       <Blog />
       <Contact />
     </>

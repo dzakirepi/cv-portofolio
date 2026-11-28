@@ -48,7 +48,7 @@ export default function Navbar() {
     document.body.style.overflow = open ? 'hidden' : ''
   }, [open])
 
-  const brand = profile.brand || 'DZAKI'
+  const brand = profile.brand || 'REPi'
 
   return (
     <header className={`navbar ${scrolled ? 'is-scrolled' : ''}`}>

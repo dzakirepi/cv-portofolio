@@ -1,22 +1,15 @@
-// Backend portofolio Dzaki Repi Nugroho.
-//
-// Tanpa database dan tanpa dashboard admin:
-//   - Konten dibaca dari file di folder ./content (JSON + Markdown).
-//     Ubah file-nya, simpan, lalu refresh browser — tidak perlu restart.
-//   - Form kontak dikirim ke email lewat SMTP.
-//   - Hasil build React (frontend/dist) ikut di-serve, jadi cukup deploy satu aplikasi.
-//
-// Hanya memakai standard library Go (tidak perlu `go mod download`).
 package main
 
 import (
 	"log"
+	"mime"
 	"net/http"
 	"time"
 )
 
 func main() {
 	cfg := loadConfig()
+	_ = mime.AddExtensionType(".mjs", "text/javascript")
 	mux := http.NewServeMux()
 
 	mux.HandleFunc("/api/v1/health", method(http.MethodGet, func(w http.ResponseWriter, r *http.Request) {
