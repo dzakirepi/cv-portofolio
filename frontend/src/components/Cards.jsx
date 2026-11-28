@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, Calendar, Clock } from 'lucide-react'
-import { GithubIcon } from './Icons'
+import { ArrowUpRight, Calendar, Clock, Images } from 'lucide-react'
 import { useLang } from '../lib/i18n'
 import { formatDate } from '../lib/theme'
 
@@ -27,37 +26,36 @@ function Cover({ src, alt, seed = '' }) {
 
 export function ProjectCard({ project }) {
   const { tr, t } = useLang()
+  const cover = project.images?.[0]?.src || project.image
+  const count = project.images?.length || 0
   return (
-    <article className="card project-card">
+    <Link to={`/projects/${project.slug}`} className="card project-card">
       <div className="card-media">
-        <Cover src={project.image} alt={project.title} seed={project.title} />
+        <Cover src={cover} alt={project.title} seed={project.title} />
+        {project.category && <span className="media-badge">{t(`projects.cat.${project.category}`)}</span>}
+        {count > 1 && (
+          <span className="media-count">
+            <Images size={13} /> {count}
+          </span>
+        )}
       </div>
       <div className="card-body">
         <h3>{project.title}</h3>
-        <p>{tr(project.description)}</p>
+        <p className="clamp-3">{tr(project.synopsis || project.description)}</p>
         <div className="card-footer">
           <div className="tags">
-            {project.tags?.map(tag => (
+            {(project.tech?.length ? project.tech : project.tags)?.slice(0, 4).map(tag => (
               <span key={tag} className="tag">
                 {tag}
               </span>
             ))}
           </div>
-          <div className="card-links">
-            {project.repo && (
-              <a href={project.repo} target="_blank" rel="noreferrer" aria-label={`${t('projects.code')} ${project.title}`}>
-                <GithubIcon width={16} height={16} />
-              </a>
-            )}
-            {project.demo && (
-              <a href={project.demo} target="_blank" rel="noreferrer" aria-label={`${t('projects.demo')} ${project.title}`}>
-                <ArrowUpRight size={17} />
-              </a>
-            )}
-          </div>
+          <span className="card-more" aria-hidden="true">
+            <ArrowUpRight size={17} />
+          </span>
         </div>
       </div>
-    </article>
+    </Link>
   )
 }
 

@@ -1,67 +1,482 @@
 [
   {
-    "slug": "erp-system",
-    "title": "ERP System",
-    "description": {
-      "id": "Sistem ERP internal perusahaan untuk mengelola data dan proses bisnis sesuai kebutuhan pengguna.",
-      "en": "Internal company ERP system to manage data and business processes based on user needs."
+    "slug": "erplite",
+    "title": "ERPLite System",
+    "category": "erp",
+    "featured": true,
+    "context": {
+      "id": "Sistem untuk klien manufaktur · PT Digital Optima Integra",
+      "en": "Built for a manufacturing client · PT Digital Optima Integra"
     },
-    "image": "/images/projects/erp-system.svg",
-    "tags": ["Backend", "ERP", "SQL"],
+    "synopsis": {
+      "id": "ERP berbasis web yang menyatukan Purchasing, Sales, Inventory, dan Accounting dalam satu dashboard real-time untuk perusahaan manufaktur.",
+      "en": "A web-based ERP that unifies Purchasing, Sales, Inventory, and Accounting in one real-time dashboard for a manufacturing company."
+    },
+    "overview": {
+      "id": "ERPLite dibangun agar manajemen perusahaan manufaktur bisa memantau seluruh alur bisnis dari satu tempat. Setiap departemen punya dashboard sendiri dengan filter periode, departemen, vendor, dan customer, sehingga data pembelian, penjualan, stok, dan keuangan bisa dianalisis tanpa harus menarik laporan manual dari banyak sistem.\n\nAlur pembelian dipantau dari Proposal Sheet, Purchase Order, Good Receive Note, sampai Invoice, lengkap dengan jumlah dokumen outstanding dan riwayat aktivitas setiap dokumen. Di sisi lain, tim sales bisa membandingkan target dengan pencapaian, gudang memantau pergerakan material, dan tim accounting melihat arus kas serta umur piutang dan hutang.",
+      "en": "ERPLite lets a manufacturing company's management monitor the whole business flow from one place. Each department has its own dashboard with period, department, vendor, and customer filters, so purchasing, sales, stock, and finance data can be analysed without pulling manual reports from several systems.\n\nThe purchasing flow is tracked from Proposal Sheet, Purchase Order, and Good Receive Note to Invoice, including outstanding document counts and each document's activity history. Meanwhile the sales team compares targets with achievements, the warehouse tracks material movement, and accounting monitors cash flow plus receivable and payable aging."
+    },
+    "features": [
+      {
+        "id": "Dashboard Purchasing: alur PS → PO → GRN → Invoice, dokumen outstanding, feed aktivitas, distribusi material, dan ringkasan pembelian tahunan",
+        "en": "Purchasing dashboard: PS → PO → GRN → Invoice flow, outstanding documents, activity feed, material distribution, and yearly purchase summary"
+      },
+      {
+        "id": "Dashboard Sales: performa penjualan plan vs actual, top 10 produk, dan share penjualan per customer",
+        "en": "Sales dashboard: plan vs actual performance, top 10 products, and sales share by customer"
+      },
+      {
+        "id": "Dashboard Inventory: cek stok cepat, PO menunggu, GRN diterima, tracking material request & WIP, serta material flow funnel",
+        "en": "Inventory dashboard: quick stock check, pending POs, received GRNs, material request & WIP tracking, and a material flow funnel"
+      },
+      {
+        "id": "Dashboard Accounting: saldo kas, cash in/out, aging AP & AR, aktivitas jurnal, dan budget vs pengeluaran per departemen",
+        "en": "Accounting dashboard: cash balance, cash in/out, AP & AR aging, journal activity, and budget vs expenses per department"
+      },
+      {
+        "id": "Filter periode, departemen, vendor, dan customer di setiap dashboard",
+        "en": "Period, department, vendor, and customer filters on every dashboard"
+      }
+    ],
+    "tags": [
+      "ERP",
+      "Purchasing",
+      "Sales",
+      "Inventory",
+      "Accounting"
+    ],
+    "tech": [
+      "PostgreSQL",
+      "Golang",
+      "Vanilla JS",
+      "HTML",
+      "CSS"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/erplite-1.webp",
+        "caption": {
+          "id": "Dashboard Purchasing",
+          "en": "Purchasing dashboard"
+        }
+      },
+      {
+        "src": "/images/projects/erplite-2.webp",
+        "caption": {
+          "id": "Dashboard Sales",
+          "en": "Sales dashboard"
+        }
+      },
+      {
+        "src": "/images/projects/erplite-3.webp",
+        "caption": {
+          "id": "Dashboard Inventory",
+          "en": "Inventory dashboard"
+        }
+      },
+      {
+        "src": "/images/projects/erplite-4.webp",
+        "caption": {
+          "id": "Dashboard Accounting",
+          "en": "Accounting dashboard"
+        }
+      }
+    ],
     "demo": "",
-    "repo": "",
-    "featured": true
+    "repo": ""
   },
   {
-    "slug": "maintenance-system",
-    "title": "Maintenance System",
-    "description": {
-      "id": "Sistem maintenance berbasis web dan mobile, dari mockup UI/UX hingga pengembangan backend.",
-      "en": "Web and mobile maintenance system, from UI/UX mockups to backend development."
+    "slug": "uat-management-system",
+    "title": "UAT Management System",
+    "category": "docs",
+    "featured": true,
+    "context": {
+      "id": "Produk internal · PT Digital Optima Integra",
+      "en": "Internal product · PT Digital Optima Integra"
     },
-    "image": "/images/projects/maintenance-system.svg",
-    "tags": ["UI/UX", "Backend", "Web & Mobile"],
+    "synopsis": {
+      "id": "Sistem untuk membuat, menjalankan, dan memantau dokumen User Acceptance Test (UAT) internal maupun eksternal di setiap proyek.",
+      "en": "A system to create, run, and monitor internal and external User Acceptance Test (UAT) documents for every project."
+    },
+    "overview": {
+      "id": "Sebelum sistem ini ada, dokumen UAT dibuat terpisah di spreadsheet sehingga sulit dipantau progresnya. UAT Management System memusatkan semuanya: tim membuat dokumen UAT per customer dan proyek, mengisi test case langsung di sistem, lalu manajemen bisa melihat progres dan status persetujuan dari dashboard.\n\nSetiap dokumen berisi daftar test case lengkap, mulai dari modul, fitur, skenario, langkah pengujian, hasil yang diharapkan, status, penguji, tanggal, sampai catatan. Dashboard menampilkan total UAT, jumlah proyek, kesehatan proyek (persentase test case yang lulus), serta pembagian UAT internal dan eksternal.",
+      "en": "Before this system, UAT documents lived in separate spreadsheets, which made progress hard to track. UAT Management System centralises everything: the team creates UAT documents per customer and project, fills in test cases directly in the system, and management follows progress and approval status from the dashboard.\n\nEach document holds a full test case list covering module, feature, scenario, test steps, expected result, status, tester, date, and remarks. The dashboard shows total UATs, project count, project health (percentage of passing test cases), and the internal vs external split."
+    },
+    "features": [
+      {
+        "id": "Dashboard: total UAT, total proyek, project health, serta jumlah UAT internal & eksternal",
+        "en": "Dashboard: total UATs, total projects, project health, and internal & external UAT counts"
+      },
+      {
+        "id": "Daftar dokumen UAT dengan pencarian, filter tipe & status, progress bar, dan status approval",
+        "en": "UAT document list with search, type & status filters, progress bars, and approval status"
+      },
+      {
+        "id": "Form dokumen UAT dinamis: pilih company, project, dan PIC, lalu tambah baris test case sesuai kebutuhan",
+        "en": "Dynamic UAT form: pick company, project, and PIC, then add as many test case rows as needed"
+      },
+      {
+        "id": "Master data, user management, UAT report, dan log trail untuk jejak audit",
+        "en": "Master data, user management, UAT reports, and a log trail for auditing"
+      }
+    ],
+    "tags": [
+      "QA",
+      "UAT",
+      "Document Management"
+    ],
+    "tech": [
+      "PostgreSQL",
+      "Golang",
+      "React"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/uat-1.webp",
+        "caption": {
+          "id": "Dashboard overview UAT",
+          "en": "UAT dashboard overview"
+        }
+      },
+      {
+        "src": "/images/projects/uat-2.webp",
+        "caption": {
+          "id": "Form dokumentasi UAT dan test case",
+          "en": "UAT documentation form and test cases"
+        }
+      }
+    ],
     "demo": "",
-    "repo": "",
-    "featured": true
+    "repo": ""
   },
   {
-    "slug": "customer-operations",
-    "title": "Customer Operations System",
-    "description": {
-      "id": "Sistem operasional customer untuk mendukung pekerjaan harian tim operasional.",
-      "en": "Customer operations system supporting the operations team's daily work."
+    "slug": "manual-book-management-system",
+    "title": "Manual Book Management System",
+    "category": "docs",
+    "featured": true,
+    "context": {
+      "id": "Produk internal · PT Digital Optima Integra",
+      "en": "Internal product · PT Digital Optima Integra"
     },
-    "image": "/images/projects/customer-operations.svg",
-    "tags": ["Full Stack", "SQL"],
+    "synopsis": {
+      "id": "Sistem untuk menyusun dan mengelola manual book setiap aplikasi, lengkap dengan cover otomatis dan editor dokumen berformat A4.",
+      "en": "A system to write and manage user manuals for every application, with an automatic cover and an A4 document editor."
+    },
+    "overview": {
+      "id": "Setiap sistem yang diserahkan ke customer membutuhkan manual book. Sistem ini membuat proses itu seragam dan cepat: pengguna memilih customer dan proyek, mengisi judul, lalu cover dokumen terbentuk otomatis dari template tetap perusahaan.\n\nIsi manual ditulis langsung di editor bergaya dokumen dengan halaman A4. Editor ini mendukung heading, format teks, daftar, tabel, tautan, gambar, garis pemisah, dan halaman baru. Dokumen bisa disimpan sebagai draft, dipublikasikan, dilihat, dan diunduh dari daftar dokumen.",
+      "en": "Every system handed over to a customer needs a user manual. This system makes that process consistent and fast: users pick the customer and project, enter a title, and the cover is generated automatically from the company's fixed template.\n\nThe manual's content is written in a document-style editor with A4 pages. It supports headings, text formatting, lists, tables, links, images, dividers, and page breaks. Documents can be saved as drafts, published, previewed, and downloaded from the document list."
+    },
+    "features": [
+      {
+        "id": "Ringkasan jumlah dokumen: total, draft, dan published",
+        "en": "Document summary: total, draft, and published counts"
+      },
+      {
+        "id": "Daftar dokumen per customer dan proyek, dengan pencarian, filter status, preview, dan download",
+        "en": "Document list per customer and project, with search, status filter, preview, and download"
+      },
+      {
+        "id": "Cover manual book otomatis dari template tetap perusahaan",
+        "en": "Automatic manual cover from the company's fixed template"
+      },
+      {
+        "id": "Editor rich-text halaman A4: tabel, gambar, tautan, dan halaman baru (Ctrl+Enter)",
+        "en": "A4 rich-text editor: tables, images, links, and page breaks (Ctrl+Enter)"
+      }
+    ],
+    "tags": [
+      "Document Management",
+      "Rich Text Editor"
+    ],
+    "tech": [
+      "PostgreSQL",
+      "Golang",
+      "React"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/manual-book-1.webp",
+        "caption": {
+          "id": "Daftar dokumen manual book",
+          "en": "Manual book document list"
+        }
+      },
+      {
+        "src": "/images/projects/manual-book-2.webp",
+        "caption": {
+          "id": "Informasi dokumen dan preview cover otomatis",
+          "en": "Document info and automatic cover preview"
+        }
+      },
+      {
+        "src": "/images/projects/manual-book-3.webp",
+        "caption": {
+          "id": "Editor dokumen halaman A4",
+          "en": "A4 document editor"
+        }
+      }
+    ],
     "demo": "",
-    "repo": "",
-    "featured": true
+    "repo": ""
   },
   {
-    "slug": "portfolio-website",
-    "title": "Portfolio Website",
-    "description": {
-      "id": "Website portofolio pribadi ini: React di frontend, Go di backend, tanpa database.",
-      "en": "This personal portfolio: React on the frontend, Go on the backend, no database."
+    "slug": "backlog-system",
+    "title": "Backlog System",
+    "category": "internal",
+    "featured": true,
+    "context": {
+      "id": "Produk internal · PT Digital Optima Integra",
+      "en": "Internal product · PT Digital Optima Integra"
     },
-    "image": "/images/projects/portfolio.svg",
-    "tags": ["React", "Golang"],
+    "synopsis": {
+      "id": "Sistem pencatatan pekerjaan tim programmer, lengkap dengan kalender proyek, matriks beban kerja, dan penilaian kinerja metode SAW.",
+      "en": "A work-tracking system for the programming team, with a project calendar, workload matrix, and SAW-based performance scoring."
+    },
+    "overview": {
+      "id": "Backlog System mencatat setiap tugas dan event tim programmer: customer, proyek, modul, tujuan (development, bug, dan lainnya), tanggal mulai dan selesai, PIC, serta tingkat kompleksitas, kesulitan, dan prioritas. Dashboard bisa difilter dengan banyak kriteria dan menampilkan kalender proyek serta matriks beban kerja dan penyelesaian.\n\nDi menu laporan, kinerja programmer dihitung dengan metode SAW (Simple Additive Weighting). Setiap programmer diberi nilai berdasarkan kriteria berbobot, diurutkan menjadi peringkat, divisualisasikan dalam grafik, dan bisa dicetak ke PDF.",
+      "en": "Backlog System records every task and event of the programming team: customer, project, module, purpose (development, bug, and so on), start and end dates, PIC, plus complexity, difficulty, and priority levels. The dashboard can be filtered by many criteria and shows a project calendar and a workload & completion matrix.\n\nIn the reports menu, programmer performance is calculated with the SAW (Simple Additive Weighting) method. Each programmer is scored on weighted criteria, ranked, visualised in a chart, and the report can be printed to PDF."
+    },
+    "features": [
+      {
+        "id": "Input task dan event dengan kompleksitas, kesulitan, prioritas, dan PIC",
+        "en": "Task and event input with complexity, difficulty, priority, and PIC"
+      },
+      {
+        "id": "Filter lengkap: PIC, customer, rentang tanggal, tipe data, tujuan, kompleksitas, kesulitan, dan prioritas",
+        "en": "Rich filters: PIC, customer, date range, data type, purpose, complexity, difficulty, and priority"
+      },
+      {
+        "id": "Kalender proyek serta matriks workload & completion (open, postponed, dan done rate)",
+        "en": "Project calendar plus a workload & completion matrix (open, postponed, and done rate)"
+      },
+      {
+        "id": "Laporan kinerja programmer metode SAW: peringkat, skor, grafik, dan cetak PDF",
+        "en": "SAW programmer performance report: ranking, scores, chart, and PDF export"
+      }
+    ],
+    "tags": [
+      "Task Management",
+      "Decision Support (SAW)",
+      "Reporting"
+    ],
+    "tech": [
+      "PostgreSQL",
+      "Golang",
+      "React"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/backlog-1.webp",
+        "caption": {
+          "id": "Dashboard backlog",
+          "en": "Backlog dashboard"
+        }
+      },
+      {
+        "src": "/images/projects/backlog-2.webp",
+        "caption": {
+          "id": "Laporan kinerja programmer (metode SAW)",
+          "en": "Programmer performance report (SAW method)"
+        }
+      }
+    ],
     "demo": "",
-    "repo": "https://github.com/dzakirepi/cv-portofolio",
-    "featured": true
+    "repo": ""
   },
   {
-    "slug": "parking-ticketing",
-    "title": "Campus Parking Ticketing",
-    "description": {
-      "id": "Sistem parkir sederhana untuk ticketing di Kampus BSI Cikarang.",
-      "en": "Simple parking ticketing system for the BSI Cikarang campus."
+    "slug": "production-management-system",
+    "title": "Production Management System",
+    "category": "erp",
+    "featured": false,
+    "context": {
+      "id": "Sistem untuk klien manufaktur · PT Digital Optima Integra",
+      "en": "Built for a manufacturing client · PT Digital Optima Integra"
     },
-    "image": "/images/projects/parking-ticketing.svg",
-    "tags": ["Python"],
+    "synopsis": {
+      "id": "Sistem pengelolaan order produksi berbasis gambar teknik, dari input order dan upload drawing sampai tracking proses produksi.",
+      "en": "A production order system built around technical drawings, from order entry and drawing upload to production process tracking."
+    },
+    "overview": {
+      "id": "Pada perusahaan manufaktur berbasis job order, setiap pesanan selalu disertai gambar teknik. Sistem ini menyimpan order beserta drawing-nya, lalu memantau setiap job melewati tahap produksi hingga pengiriman.\n\nOperator bisa membuat order baru, mengunggah satu atau beberapa drawing, mengisi detail barang, lalu memantau status job (Open, Production, Delivery, Completed) dari daftar order. Di dashboard produksi, drawing ditampilkan berdampingan dengan daftar proses produksi job tersebut, sehingga operator di lantai produksi bisa langsung melihat apa yang harus dikerjakan.",
+      "en": "In job-order manufacturing, every order comes with a technical drawing. This system stores each order together with its drawings, then tracks every job through the production stages until delivery.\n\nOperators can create orders, upload one or more drawings, fill in item details, and follow each job's status (Open, Production, Delivery, Completed) from the order list. On the production dashboard, the drawing is shown side by side with the job's production process list, so shop-floor operators see exactly what needs to be done."
+    },
+    "features": [
+      {
+        "id": "Input order baru dengan upload dan pengelolaan beberapa drawing",
+        "en": "New order entry with upload and management of multiple drawings"
+      },
+      {
+        "id": "Daftar order dengan status Open, Production, Delivery, dan Completed, serta filter tanggal",
+        "en": "Order list with Open, Production, Delivery, and Completed statuses, plus date filters"
+      },
+      {
+        "id": "Dashboard produksi: viewer drawing dan daftar proses produksi per job",
+        "en": "Production dashboard: drawing viewer and per-job production process list"
+      },
+      {
+        "id": "Penomoran job otomatis dan cetak dokumen proses",
+        "en": "Automatic job numbering and process document printing"
+      }
+    ],
+    "tags": [
+      "Manufacturing",
+      "Production",
+      "Job Order"
+    ],
+    "tech": [
+      "PostgreSQL",
+      "Golang",
+      "Vanilla JS",
+      "HTML",
+      "CSS"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/production-1.webp",
+        "caption": {
+          "id": "Dashboard produksi dengan viewer drawing",
+          "en": "Production dashboard with drawing viewer"
+        }
+      },
+      {
+        "src": "/images/projects/production-2.webp",
+        "caption": {
+          "id": "Daftar order dan status produksi",
+          "en": "Order list and production status"
+        }
+      },
+      {
+        "src": "/images/projects/production-3.webp",
+        "caption": {
+          "id": "Input order baru dan upload drawing",
+          "en": "New order entry and drawing upload"
+        }
+      }
+    ],
     "demo": "",
-    "repo": "",
-    "featured": false
+    "repo": ""
+  },
+  {
+    "slug": "asset-management-system",
+    "title": "Asset Management System",
+    "category": "erp",
+    "featured": false,
+    "context": {
+      "id": "Sistem untuk klien manufaktur · PT Digital Optima Integra",
+      "en": "Built for a manufacturing client · PT Digital Optima Integra"
+    },
+    "synopsis": {
+      "id": "Sistem pencatatan ribuan aset perusahaan beserta proses stock taking, dari aset utama sampai sub-aset per lokasi dan departemen.",
+      "en": "A system for recording thousands of company assets and running stock taking, from main assets to sub-assets per location and department."
+    },
+    "overview": {
+      "id": "Asset Management System dipakai untuk mendata seluruh aset perusahaan manufaktur, yang jumlahnya mencapai ribuan aset. Setiap aset punya Asset ID dan Tag ID, kelas, departemen, lokasi, vendor, deskripsi, tanggal mulai tercatat (bookstart), status, dan hubungan parent-child antara aset utama dan sub-aset.\n\nDashboard menampilkan total aset beserta rinciannya (main asset, sub asset, class, department, location) dan progres stock taking: total aset yang harus dicek, yang sedang berjalan, dan yang sudah selesai.",
+      "en": "Asset Management System records every asset of a manufacturing company, numbering in the thousands. Each asset has an Asset ID and Tag ID, class, department, location, vendor, description, bookstart date, status, and a parent-child link between main assets and sub-assets.\n\nThe dashboard shows total assets with their breakdown (main asset, sub asset, class, department, location) and stock taking progress: total assets to check, those in progress, and those completed."
+    },
+    "features": [
+      {
+        "id": "Ringkasan aset: main asset, sub asset, class, department, dan location",
+        "en": "Asset summary: main asset, sub asset, class, department, and location"
+      },
+      {
+        "id": "Progres stock taking: total, sedang berjalan, dan selesai, lengkap dengan grafik",
+        "en": "Stock taking progress: total, ongoing, and complete, with a chart"
+      },
+      {
+        "id": "Tabel aset dengan pencarian, sorting, dan pagination untuk ribuan data",
+        "en": "Asset table with search, sorting, and pagination for thousands of records"
+      },
+      {
+        "id": "Hierarki aset parent dan sub-aset",
+        "en": "Parent and sub-asset hierarchy"
+      }
+    ],
+    "tags": [
+      "Asset Management",
+      "Stock Taking"
+    ],
+    "tech": [
+      "SQL Server",
+      "Golang",
+      "Vanilla JS",
+      "HTML",
+      "CSS"
+    ],
+    "images": [
+      {
+        "src": "/images/projects/asset-1.webp",
+        "caption": {
+          "id": "Dashboard aset dan stock taking",
+          "en": "Asset and stock taking dashboard"
+        }
+      }
+    ],
+    "demo": "",
+    "repo": ""
+  },
+  {
+    "slug": "campus-parking-system",
+    "title": "Campus Parking System",
+    "category": "campus",
+    "featured": false,
+    "context": {
+      "id": "Proyek kampus · Universitas Bina Sarana Informatika Cikarang",
+      "en": "Campus project · Universitas Bina Sarana Informatika Cikarang"
+    },
+    "synopsis": {
+      "id": "Sistem tiket parkir sederhana untuk kampus: catat kendaraan masuk, cetak tiket ber-barcode, lalu hitung tarif otomatis saat keluar.",
+      "en": "A simple campus parking ticketing system: record incoming vehicles, print barcoded tickets, and calculate fees automatically on exit."
+    },
+    "overview": {
+      "id": "Proyek ini dibuat dengan Python untuk mencatat kendaraan yang masuk dan keluar area parkir Kampus BSI Cikarang. Di gate masuk, operator mencatat nomor polisi dan jenis kendaraan, lalu sistem mencetak tiket dengan nomor unik dan barcode.\n\nDi gate keluar, tiket dipindai, durasi parkir dihitung, dan tarif dikenakan sesuai jenis kendaraan. Admin bisa melihat ringkasan harian seperti jumlah kendaraan, okupansi slot, dan pendapatan.\n\nCatatan: gambar di halaman ini adalah mockup ilustrasi tampilan sistem.",
+      "en": "This project was built with Python to record vehicles entering and leaving the parking area of the BSI Cikarang campus. At the entry gate, the operator records the plate number and vehicle type, and the system prints a ticket with a unique number and barcode.\n\nAt the exit gate, the ticket is scanned, the parking duration is calculated, and the fee is charged by vehicle type. Admins can view a daily summary of vehicle counts, slot occupancy, and revenue.\n\nNote: the images on this page are illustrative mockups of the system."
+    },
+    "features": [
+      {
+        "id": "Gate masuk: input nomor polisi & jenis kendaraan, cetak tiket ber-barcode",
+        "en": "Entry gate: plate number & vehicle type input, barcoded ticket printing"
+      },
+      {
+        "id": "Gate keluar: scan tiket, hitung durasi dan tarif otomatis, pilih metode bayar",
+        "en": "Exit gate: ticket scan, automatic duration and fee calculation, payment method selection"
+      },
+      {
+        "id": "Dashboard: kendaraan masuk per jam, okupansi slot, pendapatan, dan transaksi terbaru",
+        "en": "Dashboard: hourly entries, slot occupancy, revenue, and recent transactions"
+      }
+    ],
+    "tags": [
+      "Ticketing",
+      "Parking"
+    ],
+    "tech": [
+      "Python"
+    ],
+    "mockup": true,
+    "images": [
+      {
+        "src": "/images/projects/parking-1.webp",
+        "caption": {
+          "id": "Dashboard parkir (mockup)",
+          "en": "Parking dashboard (mockup)"
+        }
+      },
+      {
+        "src": "/images/projects/parking-2.webp",
+        "caption": {
+          "id": "Gate masuk & cetak tiket (mockup)",
+          "en": "Entry gate & ticket printing (mockup)"
+        }
+      },
+      {
+        "src": "/images/projects/parking-3.webp",
+        "caption": {
+          "id": "Gate keluar & pembayaran (mockup)",
+          "en": "Exit gate & payment (mockup)"
+        }
+      }
+    ],
+    "demo": "",
+    "repo": ""
   }
 ]

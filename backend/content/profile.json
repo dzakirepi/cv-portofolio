@@ -1,33 +1,51 @@
 {
   "name": "Dzaki Repi Nugroho",
-  "brand": "REPI",
+  "brand": "DZAKI",
   "available": true,
   "role": {
     "id": "Senior Full Stack Web Developer",
     "en": "Senior Full Stack Web Developer"
   },
   "tagline": {
-    "id": "Saya membangun sistem web yang andal untuk kebutuhan bisnis, dari desain UI hingga server.",
-    "en": "I build reliable web systems for business needs, from UI design all the way to the server."
+    "id": "Saya membangun sistem web yang andal untuk kebutuhan bisnis, dari desain UI hingga konfigurasi server.",
+    "en": "I build reliable web systems for business needs, from UI design all the way to the configuration of the server."
   },
   "about": {
-    "id": "Saya Full Stack Web Developer di PT Digital Optima Integra sejak 2022. Perjalanan saya dimulai sebagai UI/UX Designer, lalu Backend Developer, hingga kini Senior Full Stack Developer. Saya telah mengembangkan 4 sistem web internal perusahaan untuk pengelolaan data, maintenance, dan operasional, sekaligus menangani instalasi dan pemeliharaan server. Saya lulusan S1 Sistem Informasi Universitas Bina Sarana Informatika.",
-    "en": "I'm a Full Stack Web Developer at PT Digital Optima Integra since 2022. I started as a UI/UX Designer, moved on to Backend Developer, and am now a Senior Full Stack Developer. I've built 4 internal web systems covering data management, maintenance, and operations, and I also handle server installation and maintenance. I hold a Bachelor's degree in Information Systems from Universitas Bina Sarana Informatika."
+    "id": "Saya Full Stack Web Developer di PT Digital Optima Integra sejak 2022. Perjalanan saya dimulai sebagai UI/UX Designer, lalu Backend Developer, hingga kini Senior Full Stack Developer. Saya telah membangun berbagai sistem web, mulai dari ERP, manajemen produksi dan aset, hingga tools internal seperti UAT dan backlog, sekaligus menangani instalasi dan pemeliharaan server. Saya lulusan S1 Sistem Informasi Universitas Bina Sarana Informatika.",
+    "en": "I'm a Full Stack Web Developer at PT Digital Optima Integra since 2022. I started as a UI/UX Designer, moved on to Backend Developer, and am now a Senior Full Stack Developer. I've built a range of web systems, from ERP, production and asset management to internal tools for UAT and backlog tracking, and I also handle server installation and maintenance. I hold a Bachelor's degree in Information Systems from Universitas Bina Sarana Informatika."
   },
   "photo": "/images/profile.webp",
   "cv": "/files/cv-dzaki-repi-nugroho.pdf",
   "email": "repitkj2@gmail.com",
   "phone": "",
   "location": "Jakarta, Indonesia",
-  "socials": [
-    { "platform": "github", "url": "https://github.com/dzakirepi" },
-    { "platform": "linkedin", "url": "https://www.linkedin.com/in/dzaki-repi-b56479364" }
+    "socials": [
+    {
+      "platform": "github",
+      "url": "https://github.com/dzakirepi"
+    },
+    {
+      "platform": "linkedin",
+      "url": "https://www.linkedin.com/in/dzaki-repi-b56479364"
+    },
+    {
+      "platform": "instagram",
+      "url": "https://www.instagram.com/dzkngrho/"
+    }
   ],
   "stats": {
-    "projects": "5+",
+    "projects": "7",
     "articles": "",
     "years": "3+",
     "certificates": ""
   },
-  "aboutTags": ["Golang", "PHP", "Python", "React", "PostgreSQL", "MySQL", "SQL Server"]
+  "aboutTags": [
+    "Golang",
+    "PHP",
+    "Python",
+    "React",
+    "PostgreSQL",
+    "MySQL",
+    "SQL Server"
+  ]
 }

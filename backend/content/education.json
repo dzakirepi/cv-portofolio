@@ -1,18 +1,30 @@
 [
   {
     "start": "2022-09",
-    "period": { "id": "2022 – 2026", "en": "2022 – 2026" },
-    "degree": { "id": "S1 Sistem Informasi", "en": "B.Sc. in Information Systems" },
+    "period": {
+      "id": "2022 – 2026",
+      "en": "2022 – 2026"
+    },
+    "degree": {
+      "id": "S1 Sistem Informasi",
+      "en": "B.Sc. in Information Systems"
+    },
     "school": "Universitas Bina Sarana Informatika",
     "description": {
-      "id": "Membuat sistem parkir untuk ticketing di Kampus BSI Cikarang dengan Python dan mengikuti beberapa seminar Quality Assurance (QA).",
-      "en": "Built a parking ticketing system for the BSI Cikarang campus with Python and attended several Quality Assurance (QA) seminars."
+      "id": "Mempelajari Sistem Informasi dari dasar hingga sisi bisnis. Di bidang teknis, saya mempelajari algoritma dan fundamental pemrograman, struktur data, basis data dan SQL, pemrograman web, serta analisis dan perancangan sistem (UML, ERD). Di bidang rekayasa, saya mempelajari rekayasa perangkat lunak dan jaringan komputer. Di sisi bisnis, saya mempelajari proses bisnis, sistem informasi akuntansi, e-business, manajemen proyek TI, dan kewirausahaan. Selama kuliah, saya membangun sistem parkir untuk ticketing di Kampus BSI Cikarang dengan Python, aktif di HIMSI sebagai anggota Divisi Pendidikan, mengikuti beberapa seminar Quality Assurance (QA), dan meraih Sertifikat Kompetensi BNSP sebagai Analis Program.",
+      "en": "Studied Information Systems from the fundamentals through to the business side. On the technical side, I studied algorithms and programming fundamentals, data structures, databases and SQL, web programming, and systems analysis and design (UML, ERD). On the engineering side, I studied software engineering and computer networks. On the business side, I studied business processes, accounting information systems, e-business, IT project management, and entrepreneurship. During my studies I built a parking ticketing system for the BSI Cikarang campus with Python, served in HIMSI's Education Division, attended several Quality Assurance (QA) seminars, and earned the BNSP Certificate of Competence as a Program Analyst."
     }
   },
   {
     "start": "2019-07",
-    "period": { "id": "2019 – 2022", "en": "2019 – 2022" },
-    "degree": { "id": "Teknik Komputer dan Jaringan", "en": "Computer and Network Engineering" },
+    "period": {
+      "id": "2019 – 2022",
+      "en": "2019 – 2022"
+    },
+    "degree": {
+      "id": "Teknik Komputer dan Jaringan",
+      "en": "Computer and Network Engineering"
+    },
     "school": "SMK Global Mulia",
     "description": {
       "id": "Mempelajari topologi dan arsitektur jaringan serta simulasi jaringan menggunakan Cisco.",

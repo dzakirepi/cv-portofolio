@@ -48,6 +48,7 @@ export default function Resume() {
             items={education.map(e => ({ period: tr(e.period), title: tr(e.degree), place: e.school, description: tr(e.description) }))}
           />
         </div>
+
       </div>
     </section>
   )
