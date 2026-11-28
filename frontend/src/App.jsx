@@ -1,61 +1,56 @@
+import { useEffect } from 'react'
+import { Route, Routes, useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import { ErrorState, Loading } from './components/Status'
+import { usePortfolio } from './lib/portfolio'
+import Home from './pages/Home'
+import ProjectsPage from './pages/ProjectsPage'
+import BlogPage from './pages/BlogPage'
+import ArticlePage from './pages/ArticlePage'
+import NotFound from './pages/NotFound'
 
-import { Navigate, Route, Routes } from 'react-router-dom'
-import ProtectedRoute from './components/ProtectedRoute'
-
-import Home from './pages/public/Home'
-import About from './pages/public/About'
-import Projects from './pages/public/Projects'
-import Experience from './pages/public/Experience'
-import Education from './pages/public/Education'
-import Blog from './pages/public/Blog'
-import Contact from './pages/public/Contact'
-
-import Login from './pages/admin/Login'
-import Dashboard from './pages/admin/Dashboard'
-import AdminProjects from './pages/admin/Projects'
-import AdminProfile from './pages/admin/Profile'
-import AdminSkills from './pages/admin/Skills'
-import AdminExperience from './pages/admin/Experience'
-import AdminEducation from './pages/admin/Education'
-import AdminCertificates from './pages/admin/Certificates'
-import AdminArticles from './pages/admin/Articles'
-import AdminMessages from './pages/admin/Messages'
-import AdminSettings from './pages/admin/Settings'
-
-import PublicLayout from './layouts/PublicLayout'
-import AdminLayout from './layouts/AdminLayout'
+// Scroll ke section saat URL berisi #hash (mis. /#contact), atau ke atas saat pindah halaman.
+function ScrollManager({ ready }) {
+  const { pathname, hash } = useLocation()
+  useEffect(() => {
+    if (!ready) return
+    if (hash) {
+      const el = document.getElementById(hash.slice(1))
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        return
+      }
+    }
+    window.scrollTo({ top: 0 })
+  }, [pathname, hash, ready])
+  return null
+}
 
 export default function App() {
+  const { loading, error, data, reload } = usePortfolio()
+  const ready = !!data
+
   return (
-    <Routes>
-      <Route element={<PublicLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/experience" element={<Experience />} />
-        <Route path="/education" element={<Education />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/contact" element={<Contact />} />
-      </Route>
-
-      <Route path="/admin/login" element={<Login />} />
-
-      <Route element={<ProtectedRoute />}>
-        <Route path="/admin" element={<AdminLayout />}>
-          <Route index element={<Dashboard />} />
-          <Route path="profile" element={<AdminProfile />} />
-          <Route path="projects" element={<AdminProjects />} />
-          <Route path="skills" element={<AdminSkills />} />
-          <Route path="experience" element={<AdminExperience />} />
-          <Route path="education" element={<AdminEducation />} />
-          <Route path="certificates" element={<AdminCertificates />} />
-          <Route path="articles" element={<AdminArticles />} />
-          <Route path="messages" element={<AdminMessages />} />
-          <Route path="settings" element={<AdminSettings />} />
-        </Route>
-      </Route>
-
-      <Route path="*" element={<Navigate to="/" replace />} />
-    </Routes>
+    <>
+      <ScrollManager ready={ready} />
+      <Navbar />
+      <main className="main">
+        {loading && !data ? (
+          <Loading />
+        ) : error && !data ? (
+          <ErrorState onRetry={reload} />
+        ) : (
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/blog" element={<BlogPage />} />
+            <Route path="/blog/:slug" element={<ArticlePage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        )}
+      </main>
+      <Footer />
+    </>
   )
 }

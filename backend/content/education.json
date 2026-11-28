@@ -1,0 +1,22 @@
+[
+  {
+    "start": "2022-09",
+    "period": { "id": "2022 – 2026", "en": "2022 – 2026" },
+    "degree": { "id": "S1 Sistem Informasi", "en": "B.Sc. in Information Systems" },
+    "school": "Universitas Bina Sarana Informatika",
+    "description": {
+      "id": "Membuat sistem parkir untuk ticketing di Kampus BSI Cikarang dengan Python dan mengikuti beberapa seminar Quality Assurance (QA).",
+      "en": "Built a parking ticketing system for the BSI Cikarang campus with Python and attended several Quality Assurance (QA) seminars."
+    }
+  },
+  {
+    "start": "2019-07",
+    "period": { "id": "2019 – 2022", "en": "2019 – 2022" },
+    "degree": { "id": "Teknik Komputer dan Jaringan", "en": "Computer and Network Engineering" },
+    "school": "SMK Global Mulia",
+    "description": {
+      "id": "Mempelajari topologi dan arsitektur jaringan serta simulasi jaringan menggunakan Cisco.",
+      "en": "Studied network topology and architecture, and network simulation using Cisco."
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "start": "2025-06",
+    "period": { "id": "Jun 2025 – Sekarang", "en": "Jun 2025 – Present" },
+    "role": { "id": "Senior Full Stack Developer", "en": "Senior Full Stack Developer" },
+    "company": "PT Digital Optima Integra",
+    "description": {
+      "id": "Mengembangkan dan memelihara beberapa sistem web sekaligus dari frontend hingga backend, melatih end-user, serta menangani instalasi dan pemeliharaan server dan jaringan.",
+      "en": "Building and maintaining several web systems at once from frontend to backend, training end-users, and handling server and network installation and maintenance."
+    }
+  },
+  {
+    "start": "2024-12",
+    "period": { "id": "Des 2024 – Jun 2025", "en": "Dec 2024 – Jun 2025" },
+    "role": { "id": "Junior Full Stack Developer", "en": "Junior Full Stack Developer" },
+    "company": "PT Digital Optima Integra",
+    "description": {
+      "id": "Memperluas peran dari backend ke full stack, mulai melatih end-user, dan menangani server.",
+      "en": "Expanded from backend to full stack, began training end-users, and started handling servers."
+    }
+  },
+  {
+    "start": "2023-02",
+    "period": { "id": "Feb 2023 – Des 2024", "en": "Feb 2023 – Dec 2024" },
+    "role": { "id": "Backend Developer", "en": "Backend Developer" },
+    "company": "PT Digital Optima Integra",
+    "description": {
+      "id": "Mengembangkan sistem ERP, maintenance, dan operasional customer dengan database MySQL, SQL Server, dan PostgreSQL.",
+      "en": "Developed ERP, maintenance, and customer operations systems using MySQL, SQL Server, and PostgreSQL."
+    }
+  },
+  {
+    "start": "2022-12",
+    "period": { "id": "Des 2022 – Feb 2023", "en": "Dec 2022 – Feb 2023" },
+    "role": { "id": "UI/UX Designer", "en": "UI/UX Designer" },
+    "company": "PT Digital Optima Integra",
+    "description": {
+      "id": "Mendesain tampilan aplikasi dengan HTML dan CSS serta membuat mockup sistem maintenance web dan mobile.",
+      "en": "Designed application interfaces with HTML and CSS and created mockups for web and mobile maintenance systems."
+    }
+  }
+]

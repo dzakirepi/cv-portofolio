@@ -1,0 +1,67 @@
+[
+  {
+    "slug": "erp-system",
+    "title": "ERP System",
+    "description": {
+      "id": "Sistem ERP internal perusahaan untuk mengelola data dan proses bisnis sesuai kebutuhan pengguna.",
+      "en": "Internal company ERP system to manage data and business processes based on user needs."
+    },
+    "image": "/images/projects/erp-system.svg",
+    "tags": ["Backend", "ERP", "SQL"],
+    "demo": "",
+    "repo": "",
+    "featured": true
+  },
+  {
+    "slug": "maintenance-system",
+    "title": "Maintenance System",
+    "description": {
+      "id": "Sistem maintenance berbasis web dan mobile, dari mockup UI/UX hingga pengembangan backend.",
+      "en": "Web and mobile maintenance system, from UI/UX mockups to backend development."
+    },
+    "image": "/images/projects/maintenance-system.svg",
+    "tags": ["UI/UX", "Backend", "Web & Mobile"],
+    "demo": "",
+    "repo": "",
+    "featured": true
+  },
+  {
+    "slug": "customer-operations",
+    "title": "Customer Operations System",
+    "description": {
+      "id": "Sistem operasional customer untuk mendukung pekerjaan harian tim operasional.",
+      "en": "Customer operations system supporting the operations team's daily work."
+    },
+    "image": "/images/projects/customer-operations.svg",
+    "tags": ["Full Stack", "SQL"],
+    "demo": "",
+    "repo": "",
+    "featured": true
+  },
+  {
+    "slug": "portfolio-website",
+    "title": "Portfolio Website",
+    "description": {
+      "id": "Website portofolio pribadi ini: React di frontend, Go di backend, tanpa database.",
+      "en": "This personal portfolio: React on the frontend, Go on the backend, no database."
+    },
+    "image": "/images/projects/portfolio.svg",
+    "tags": ["React", "Golang"],
+    "demo": "",
+    "repo": "https://github.com/dzakirepi/cv-portofolio",
+    "featured": true
+  },
+  {
+    "slug": "parking-ticketing",
+    "title": "Campus Parking Ticketing",
+    "description": {
+      "id": "Sistem parkir sederhana untuk ticketing di Kampus BSI Cikarang.",
+      "en": "Simple parking ticketing system for the BSI Cikarang campus."
+    },
+    "image": "/images/projects/parking-ticketing.svg",
+    "tags": ["Python"],
+    "demo": "",
+    "repo": "",
+    "featured": false
+  }
+]

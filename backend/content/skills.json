@@ -1,0 +1,14 @@
+[
+  {
+    "category": { "id": "Frontend", "en": "Frontend" },
+    "items": ["HTML", "CSS", "SCSS", "JavaScript", "jQuery", "React.js"]
+  },
+  {
+    "category": { "id": "Backend & Database", "en": "Backend & Database" },
+    "items": ["Go (Golang)", "PHP", "Python", "MySQL", "PostgreSQL", "SQL Server"]
+  },
+  {
+    "category": { "id": "Tools & Lainnya", "en": "Tools & Others" },
+    "items": ["Figma (UI/UX)", "Server Installation", "Server Maintenance", "Computer Networking"]
+  }
+]
